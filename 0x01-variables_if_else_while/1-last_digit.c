@@ -16,15 +16,15 @@ n = rand() - RAND_MAX / 2;
 
 if (n % 100 > 5)
 {
-printf("Last digit of n is n and is greater than 5\n", n % 100);
+printf("Last digit of n is n and is greater than 5\n");
 }
 else if (n % 100 == 0)
 {
-printf("Last digit of n is n and is 0\n", n % 100);
+printf("Last digit of n is n and is 0\n");
 }
 else
 {
-printf("Last digit of n is n and is less than 6\n", n, n % 100);
+printf("Last digit of n is n and is less than 6\n");
 }
 return 0;
 }
