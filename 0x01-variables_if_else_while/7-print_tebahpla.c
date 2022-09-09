@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-char c;
-for (c = 'z'; c >= 'a'; c++)
+char letter;
+for (letter = 'z'; letter >= 'a'; letter--)
 {
-putchar(c);
+putchar(letter);
 }
 putchar('\n');
 return (0);
