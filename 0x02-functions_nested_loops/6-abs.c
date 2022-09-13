@@ -5,12 +5,12 @@
  *
  *Return: The absolute value of the integer.
  */
-int _abs(int n)
+int _abs(int i)
 {
-if (n >= 0)
+if (i > 0 || c== 0)
 {
-return (n);
+return (i);
 }
 else
-return (-n);
+return (i*-1);
 }
