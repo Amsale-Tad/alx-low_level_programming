@@ -1,17 +1,24 @@
-#include "main.h"
+#include "main.h"
 /**
- *leet - Encodes a string into 1337 
- *@s: The string to encode 
+ *leet - Encodes a string into 1337
+ *@a: String
  *
- *Return: The encoded string 
+ *Return: String as a pointer
  */
-char *leet(char *str)
+char *leet(char *a)
 {
-int indx1 = 0, indx2;
-char leet[8] = {'O', 'L', '?', 'E', 'A', '?',  '?', 'T'}
-if (str[indx1] == leet[indx2] || str[indx1] - 32 == leet[indx2])
-str[indx1] = indx2 + '0';};
-indx1++;
+int j;
+int i = 0;
+char mapping[5][2] = {"Aa", "Ee", "Oo", "Tt", "Ll"};
+int numbers[] = {52, 51, 48, 55, 49};
+while (*(a + i))
+{
+for (j = 0; j < 5; j++)
+{
+if (*(a + i) == mapping[j][0] || *(a + i) == mapping[j][1])
+*(a + i) = numbers[j];
 }
-return (str);
+i++;
+}
+return (a);
 }
