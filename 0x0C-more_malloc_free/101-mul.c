@@ -136,7 +136,7 @@ next_len--;
 }
 for (; next_len >= 0 && *next_prod != 'x'; next_len--)
 {
-num = (*next_prod - '0')
+num = (*next_prod - '0');
 num += tens;
 *final_prod = (num % 10) + '0';
 tens = num / 10;
